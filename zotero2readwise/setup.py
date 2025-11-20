@@ -10,6 +10,6 @@ setup(
     url='https://github.com/Jules-the-AI/Zotero2Readwise-Sync',
     install_requires=[
         'pyzotero',
-        # Add other dependencies here
+        'requests',
     ],
 )

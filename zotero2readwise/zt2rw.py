@@ -66,6 +66,9 @@ ons) that were modified since the specified date.
 
         self.readwise.post_zotero_annotations_to_readwise(formatted_items)
 
+        if self.write_failures and self.readwise.failed_highlights:
+            self.readwise.save_failed_items_to_json("failed_readwise_items.json")
+
     def retrieve_all(self, item_type: str, since: int = 0):
         """
         Retrieves all items of a given type from Zotero Database since a given t
