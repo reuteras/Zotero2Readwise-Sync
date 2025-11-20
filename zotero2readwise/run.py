@@ -13,8 +13,7 @@ def main():
         help="Readwise Access Token (visit https://readwise.io/access_token)",
     )
     parser.add_argument(
-        "zotero_key", help="Zotero API key (visit https://www.zotero.org/setting
-s/keys)"
+        "zotero_key", help="Zotero API key (visit https://www.zotero.org/settings/keys)"
     )
     parser.add_argument(
         "zotero_library_id",
@@ -23,15 +22,13 @@ s/keys)"
     parser.add_argument(
         "--library_type",
         default="user",
-        help="Zotero Library type ('user': for personal library (default value),
- 'group': for a shared library)",
+        help="Zotero Library type ('user': for personal library (default value), 'group': for a shared library)",
     )
     parser.add_argument(
         "--include_annotations",
         type=str,
         default="y",
-        help="Include Zotero annotations (highlights + comments) | Options: 'y'/
-'yes' (default), 'n'/'no'",
+        help="Include Zotero annotations (highlights + comments) | Options: 'y'/'yes' (default), 'n'/'no'",
     )
     parser.add_argument(
         "--include_notes",
@@ -53,9 +50,7 @@ s/keys)"
         ],
         action="append",
         default=[],
-        help="Filter Zotero annotations by given color | Options: '#ffd400' (yel
-low), '#ff6666' (red), '#5fb236' (green), '#2ea8e5' (blue), '#a28ae5' (purple),
-'#e56eee' (magenta), '#f19837' (orange), '#aaaaaa' (gray)",
+        help="Filter Zotero annotations by given color | Options: '#ffd400' (yellow), '#ff6666' (red), '#5fb236' (green), '#2ea8e5' (blue), '#a28ae5' (purple), '#e56eee' (magenta), '#f19837' (orange), '#aaaaaa' (gray)",
     )
     parser.add_argument(
         "--filter_tags",
