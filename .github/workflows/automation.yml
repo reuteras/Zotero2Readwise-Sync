@@ -25,10 +25,10 @@ jobs:
         run: pip install setuptools
 
       - name: 💿 Install Zotero2Readwise Python package
-        run: pip install ./zotero2readwise
+        run: pip install git+https://github.com/e-alizadeh/Zotero2Readwise.git
 
+      - name: 📥 Download the Python script needed for automation
+        run:  curl https://raw.githubusercontent.com/e-alizadeh/Zotero2Readwise/master/zotero2readwise/run.py -o run.py
+      
       - name: 🚀 Run Automation
-        run: python zotero2readwise/run.py ${{ secrets.READWISE_TOKEN }} ${{ secrets.ZOTERO_KEY }} ${{ secrets.ZOTERO_ID }}
-
-      - name: 🔎 Report Failures
-        run: python report_failures.py
+        run: python run.py ${{ secrets.READWISE_TOKEN }} ${{ secrets.ZOTERO_KEY }} ${{ secrets.ZOTERO_ID }}
