@@ -8,6 +8,9 @@ on:
     - cron: "0 4,16 * * *" # Runs at 03:00 AM (UTC) every day (Check https://crontab.guru/)
   workflow_dispatch:
 
+permissions:
+  contents: read
+
 jobs:
   zotero-to-readwise-automation:
     runs-on: ubuntu-latest
