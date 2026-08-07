@@ -1,0 +1,1 @@
+zotero2readwise==1.4.2
