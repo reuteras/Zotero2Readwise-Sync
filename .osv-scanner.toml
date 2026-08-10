@@ -2,5 +2,5 @@
 id = "GHSA-65pc-fj4g-8rjx"
 reason = "Not relevant for this project and no patch"
 [[IgnoredVulns]]
-id = "HSA-mf9w-mj56-hr94"
+id = "GHSA-mf9w-mj56-hr94"
 reason = "Not relevant for this project and no patch"
