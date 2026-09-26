@@ -1,2 +1,2 @@
 zotero2readwise==1.4.2
-anyio==4.14.2
+anyio==4.15.1
