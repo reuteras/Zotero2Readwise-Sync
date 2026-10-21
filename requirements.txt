@@ -1,2 +1,3 @@
 zotero2readwise==1.4.2
 anyio==4.15.1
+certifi==2026.10.19
